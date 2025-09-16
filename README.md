@@ -1,66 +1,104 @@
-# 🎬 Assignment: Bringing Web Pages to Life with CSS & JavaScript
+# Week 7 - CSS & JS Animation
 
-In this assignment, you’ll create a visually dynamic and interactive experience by combining the beauty of **CSS3 animations** with the logic and power of **JavaScript functions**. By the end, you’ll have a mini interactive experience that not only looks good—but *feels* responsive and alive!
-
----
-
-## 🎨✨ Part 1: CSS3 Transitions and Animations for Dynamic Styling Effects
-
-Start by enhancing elements on your page using **CSS transitions** and **keyframe animations**. You can animate things like:
-
-* Button hover effects
-* Smooth fades, slides, or transforms
-* Continuous or triggered animations using `@keyframes`
-
-**Goal:** Create a page that visually responds to user interaction and/or time-based triggers using only CSS.
+This project demonstrates various **CSS transitions, animations, and JavaScript-controlled animations**. It includes interactive elements such as transition effects, card flipping, pulsing hearts, and JS-based animation toggling.
 
 ---
 
-## 📚✨ Part 2: JavaScript Functions — Scope, Parameters & Return Values
+## Table of Contents
 
-Now it’s time to dive deeper into how **functions** actually work. In this section:
-
-* Write several custom functions that take in **parameters** and return **useful values**
-* Demonstrate understanding of **local vs global scope**
-* Show how functions can be reused to control animation, trigger DOM changes, or calculate values
-
-**Goal:** Show functional thinking by building small, reusable pieces of logic that clearly use parameters, return values, and demonstrate scope awareness.
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [File Structure](#file-structure)
+- [Usage](#usage)
+- [Author](#author)
 
 ---
 
-## 🎨🎬 Part 3: Combining CSS Animations with JavaScript
+## Features
 
-Here’s the real magic—combine the two worlds!
+### CSS Transitions
 
-Use JavaScript to **trigger** CSS animations dynamically. Think along the lines of:
+- Smooth color and shape transitions on hover.
+- Interactive transition boxes and buttons.
 
-* A button that animates a box when clicked
-* A card flip animation on hover or click
-* A loading animation that starts/stops based on user input
-* A popup/modal that slides in and fades out based on events
+### Card Flip Animation
 
-**Goal:** Use JavaScript to **add/remove classes** or modify styles dynamically to trigger CSS animations. Bonus if you make it reusable with functions!
+- 3D card flip effect using CSS `transform` and `perspective`.
+- Front shows an image, back shows text.
 
----
+### Pulsing Heart Animation
 
-## Deliverables
+- Heart shape created with CSS and `::before` & `::after`.
+- Pulsing effect using `@keyframes heartbeat`.
 
-Submit a project folder that includes:
+### JS-Controlled Animation
 
-* `index.html` — Your structured content
-* `styles.css` — All your transitions and keyframe animations
-* `script.js` — Your functional logic demonstrating scope, parameters, return values, and animation triggers
-
-Each part of the assignment should be clearly labeled and commented to show your understanding.
+- Play and pause a moving ball using JavaScript.
+- Demonstrates function usage, scope, and reusable animation functions.
+- Calculates area of the transition box on click.
 
 ---
 
-## Outcome
+## Technologies Used
 
-You’ll be evaluated on:
+- **HTML5** – Structuring content.
+- **CSS3** – Styling, transitions, animations.
+- **JavaScript (ES6)** – Event handling and animation control.
 
-* Use of CSS transitions and animations to enhance UI
-* Quality and clarity of JavaScript functions (with parameters and return values)
-* Effective integration of CSS and JS for interactive effects
-* Code readability, modularity, and documentation
-* Creativity and user experience
+---
+
+## File Structure
+
+
+plp-webtechnologies-classroom-july2025-july-2025-css3-transitions-animations-CSS3-Transitions-Animat/
+
+│
+
+├─ index.html
+
+├─ styles/
+
+│  └─ style.css
+
+├─ scripts/
+
+│  └─ script.js
+
+└─ assets/
+
+└─ uman.jpg
+
+
+---
+## Usage
+
+1. Clone the repository or download the files.
+2. Open `index.html` in a web browser.
+3. Interact with the elements:
+   - Hover over **transition boxes** and **buttons** to see smooth effects.
+   - Hover over the **card** to see the flip animation.
+   - Observe the **pulsing heart** animation.
+   - Click **Play** or **Pause** to control the **ball animation**.
+   - Click the **transition box** to calculate and display its area.
+---
+## Demo
+
+![Demo Screenshot](assets/uman.jpg)
+*Example: Card flip front image.*
+
+---
+
+## Author
+
+**Omowunmi Maruff Akindehinde**
+
+- Focus: Frontend development, CSS & JS animations
+- Email: [YourEmail@example.com]
+
+---
+
+## Notes
+
+- The JavaScript includes examples of global vs local scope and reusable functions.
+- `toggleAnimation()` is the main function to control JS animations.
+- CSS `animation-play-state` is used to pause/resume animations dynamically.
